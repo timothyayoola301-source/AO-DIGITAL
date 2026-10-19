@@ -4,344 +4,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>AO DIGITAL | Creative Developer</title>
-
-    <!-- Connect CSS -->
+    <meta name="description"
+        content="AO DIGITAL — Ayoola Olamide's web development portfolio, projects, and contact information.">
+    <meta name="theme-color" content="#f7f8fc">
+    <title>AO DIGITAL | Home</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Navigation -->
-    <header>
-        <a href="#home" class="logo">AO<span>.</span>DIGITAL</a>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a class="brand" href="index.html">AO<span>.</span> DIGITAL</a>
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false"
+                aria-controls="site-nav">Menu</button>
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <button id="theme-toggle" type="button" aria-label="Switch to light mode">
-            ☀️ Light Mode
-        </button>
+            <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+                <a class="active" href="index.html" aria-current="page">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+                <button class="theme-toggle" id="theme-toggle" type="button">Light mode</button>
+            </nav>
+        </div>
     </header>
 
-    <!-- Home Section -->
-    <section class="hero" id="home">
-
-        <p class="welcome">WELCOME TO MY DIGITAL WORLD</p>
-        <div class="profile-container">
-            <img src="images/timothy.jpg" alt="Portrait of Ayoola Olamide" class="profile-picture">
-        </div>
-        <h1>Hello, I'm <span>Ayoola Olamide</span></h1>
-
-        <h2>Web Developer | Graphic Designer | Creative</h2>
-
-        <p class="description">
-            I create beautiful websites, digital designs,
-            and creative experiences that bring ideas to life.
-        </p>
-
-        <div class="hero-buttons">
-            <a href="#projects" class="btn">Explore My Work</a>
-            <a href="#contact" class="btn outline">Contact Me</a>
-        </div>
-
-    </section>
-
-    <!-- About Section -->
-    <section class="section" id="about">
-
-        <p class="small-title">GET TO KNOW ME</p>
-
-        <h2 class="section-title">About <span>Me</span></h2>
-
-        <p class="about-text">
-            My name is Ayoola Olamide, and I am a creative digital
-            enthusiast from Ijebu Ode, Nigeria. I enjoy building
-            websites, designing graphics, exploring UI/UX design,
-            and creating digital experiences.
-
-            <br><br>
-
-            I am continuously learning and improving my skills
-            to become a better developer and designer. My goal
-            is to turn creative ideas into useful and beautiful
-            digital products.
-        </p>
-        <div class="cv-download">
-            <a href="documents/Ayoola-Olamide-CV.pdf" class="btn" download="Ayoola-Olamide-CV.pdf">
-                📄 Download My CV
-            </a>
-        </div>
-
-    </section>
-
-    <!-- Skills Section -->
-    <section class="section" id="skills">
-
-        <p class="small-title">WHAT I CAN DO</p>
-
-        <h2 class="section-title">My <span>Skills</span></h2>
-
-        <div class="skills-container">
-
-            <div class="skill-card">
-                <h3>HTML</h3>
-                <p>Advanced</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>CSS</h3>
-                <p>Intermediate</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>JavaScript</h3>
-                <p>Intermediate</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>Graphic Design</h3>
-                <p>Intermediate</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>UI/UX Design</h3>
-                <p>Intermediate</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>Content Creation</h3>
-                <p>Intermediate</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>Video Editing</h3>
-                <p>Beginner</p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Projects Section -->
-    <section class="section" id="projects">
-
-        <p class="small-title">SOME OF MY WORK</p>
-
-        <h2 class="section-title">Featured <span>Projects</span></h2>
-
-        <!-- Projects Section -->
-        <section class="section" id="projects">
-
-            <p class="small-title">SOME OF MY WORK</p>
-
-            <h2 class="section-title">
-                Featured <span>Projects</span>
-            </h2>
-
-            <div class="projects-container">
-
-                <!-- Project 1 -->
-                <div class="project-card">
-
-                    <div class="project-icon">🌐</div>
-
-                    <h3>AO DIGITAL Portfolio</h3>
-
-                    <p>
-                        My personal portfolio website showcasing
-                        my skills, creativity, and web development journey.
-                    </p>
-
-                    <span class="project-tag">Web Development</span>
-
-                    <a href="#home" class="project-button">
-                        View Portfolio
-                    </a>
-
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card">
-
-                    <div class="project-icon">🎨</div>
-
-                    <h3>Creative Design Studio</h3>
-
-                    <p>
-                        A creative project focused on digital designs,
-                        visual creativity, and modern aesthetics.
-                    </p>
-
-                    <span class="project-tag">Graphic Design</span>
-
-                    <a href="#contact" class="project-button">
-                        Contact Me
-                    </a>
-
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card">
-
-                    <div class="project-icon">🎮</div>
-
-                    <h3>Ijebu Ode Life</h3>
-
-                    <p>
-                        A game concept inspired by the culture,
-                        lifestyle, and environment of Ijebu Ode, Nigeria.
-                    </p>
-
-                    <span class="project-tag">Game Development</span>
-
-                    <a href="mailto:timothyayoola301@gmail.com" class="project-button">
-                        Ask About Project
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <div class="project-card">
-            <div class="project-icon">🌐</div>
-            <h3>Personal Website</h3>
-            <p>
-                A personal website introducing me and my
-                digital skills.
-            </p>
-            <span class="project-tag">Web Development</span>
-        </div>
-
-        <div class="project-card">
-            <div class="project-icon">🎨</div>
-            <h3>Creative Portfolio</h3>
-            <p>
-                A collection of creative ideas, designs,
-                and digital work.
-            </p>
-            <span class="project-tag">Creative Design</span>
-        </div>
-
-        <div class="project-card">
-            <div class="project-icon">🎮</div>
-            <h3>Ijebu Ode Life</h3>
-            <p>
-                A game project inspired by the culture
-                and lifestyle of Ijebu Ode.
-            </p>
-            <span class="project-tag">Game Development</span>
-        </div>
-
-        </div>
-
-        <!-- Contact Section -->
-        <section class="section contact" id="contact">
-
-            <p class="small-title">LET'S CONNECT</p>
-
-            <h2 class="section-title">
-                Contact <span>Me</span>
-            </h2>
-
-            <p>
-                Have a project or creative idea?
-                Let's connect and create something amazing!
-            </p>
-
-            <!-- Contact Buttons -->
-            <div class="contact-buttons">
-
-                <a href="mailto:timothyayoola301@gmail.com" class="btn">
-                    📧 Email Me
-                </a>
-
-                <a href="https://wa.me/2349030544965" class="btn outline" target="_blank" rel="noopener noreferrer">
-                    💬 WhatsApp
-                </a>
-
-            </div>
-
-            <!-- Social Media Links -->
-            <div class="social-links">
-
-                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                    Instagram
-                </a>
-
-                <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
-                    TikTok
-                </a>
-
-                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                    GitHub
-                </a>
-
-            </div>
-            <!-- Contact Form -->
-            <div class="contact-form-container">
-
-                <h3>Send Me a Message</h3>
-
-                <p class="form-description">
-                    Have a question or project idea? Fill out the form below.
+    <main id="main">
+        <section class="hero container">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="status-dot"></span> WEB DEVELOPMENT · CREATIVE DIGITAL WORK</p>
+                <h1>Building thoughtful digital experiences, <span>one project at a time.</span></h1>
+                <p class="lead">
+                    I'm Ayoola Olamide, an aspiring web developer learning to turn ideas
+                    into clean, useful, and engaging websites with HTML, CSS, and JavaScript.
                 </p>
 
-                <form id="contact-form">
+                <span class="typing-text" data-typing></span>
 
-                    <div class="form-group">
-                        <label for="visitor-name">Your Name</label>
+                <div class="button-row">
+                    <a class="button button-primary" href="projects.html">Explore my projects ↗</a>
+                    <a class="button button-secondary" href="documents/Ayoola-Olamide-CV.pdf" target="_blank"
+                        rel="noopener">
+                        View my CV
+                    </a>
+                </div>
 
-                        <input type="text" id="visitor-name" name="name" placeholder="Enter your full name" required>
-                    </div>
+                <div class="hero-meta">
+                    <span><strong>01</strong> Learn by building</span>
+                    <span><strong>02</strong> Improve every day</span>
+                </div>
+            </div>
 
-                    <div class="form-group">
-                        <label for="visitor-email">Your Email</label>
+            <div class="hero-visual">
+                <div class="portrait-frame">
+                    <img src="images/timothy.jpg" alt="Portrait of Ayoola Olamide" class="portrait"
+                        onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+                    <div class="portrait-fallback" aria-hidden="true">AO<span>.</span></div>
+                </div>
 
-                        <input type="email" id="visitor-email" name="email" placeholder="Enter your email address"
-                            required>
-                    </div>
+                <div class="floating-note note-top">
+                    <span class="note-mark">✳</span>
+                    <span><strong>Curious mind</strong><small>Always learning</small></span>
+                </div>
 
-                    <div class="form-group">
-                        <label for="visitor-subject">Subject</label>
-
-                        <input type="text" id="visitor-subject" name="subject" placeholder="What is your message about?"
-                            required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="visitor-message">Your Message</label>
-
-                        <textarea id="visitor-message" name="message" rows="5" placeholder="Write your message here..."
-                            required></textarea>
-                    </div>
-
-                    <button type="submit" class="btn">
-                        Send Message ✉️
-                    </button>
-
-                    <p id="form-status" role="status" aria-live="polite"></p>
-
-                </form>
-
+                <div class="floating-note note-bottom">
+                    <span class="note-mark note-mark-blue">⌘</span>
+                    <span><strong>HTML · CSS · JS</strong><small>My current toolkit</small></span>
+                </div>
             </div>
         </section>
 
-        <!-- Footer -->
-        <footer>
-            <p>
-                © <span id="year">2026</span> AO DIGITAL.
-                Created by Ayoola Olamide.
-            </p>
-        </footer>
-        <script src="script.js"></script>
+        <section class="section section-muted">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">WHAT I DO</p>
+                    <h2>Creative thinking meets practical code.</h2>
+                    <p>I’m developing my skills by building real projects, exploring design,
+                        and learning how to make websites easier to use.</p>
+                </div>
+
+                <div class="three-grid">
+                    <article class="feature-card">
+                        <span class="card-number">01</span>
+                        <div class="feature-icon">⌘</div>
+                        <h3>Web development</h3>
+                        <p>Building responsive page layouts and interactive experiences with HTML, CSS, and JavaScript.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <span class="card-number">02</span>
+                        <div class="feature-icon">✳</div>
+                        <h3>Interface design</h3>
+                        <p>Practising clean layouts, readable typography, thoughtful spacing, and consistent visual
+                            systems.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <span class="card-number">03</span>
+                        <div class="feature-icon">↗</div>
+                        <h3>Learning through projects</h3>
+                        <p>Turning ideas into working projects and improving them step by step with feedback and
+                            testing.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container">
+            <div class="section-heading heading-inline">
+                <div>
+                    <p class="eyebrow">SELECTED WORK</p>
+                    <h2>Projects in progress.</h2>
+                </div>
+                <a class="text-link" href="projects.html">View all projects →</a>
+            </div>
+
+            <div class="project-grid">
+                <article class="project-card">
+                    <div class="project-art art-purple">
+                        <span class="art-label">GAME CONCEPT</span>
+                        <span class="art-symbol">⌖</span>
+                        <span class="art-caption">IJEBU ODE LIFE</span>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-type">Interactive experience</p>
+                        <h3>Ijebu Ode Life</h3>
+                        <p>A game-inspired project exploring a local role-play world, movement, and interactive
+                            features.</p>
+                        <div class="tag-row">
+                            <span>JavaScript</span><span>Three.js</span><span>Learning project</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-art art-blue">
+                        <span class="art-label">PERSONAL BRAND</span>
+                        <span class="art-symbol">AO.</span>
+                        <span class="art-caption">AO DIGITAL</span>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-type">Portfolio website</p>
+                        <h3>AO DIGITAL</h3>
+                        <p>A personal portfolio built to share my learning journey, skills, projects, and contact
+                            details.</p>
+                        <div class="tag-row">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container cta-inner">
+                <div>
+                    <p class="eyebrow">HAVE AN IDEA?</p>
+                    <h2>Let’s make something useful.</h2>
+                    <p>I’m open to feedback, collaborations, and opportunities to keep learning.</p>
+                </div>
+                <a class="button button-light" href="contact.html">Get in touch ↗</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <a class="brand" href="index.html">AO<span>.</span> DIGITAL</a>
+            <p>Designed and built by Ayoola Olamide.</p>
+            <p>© <span data-year></span> AO DIGITAL</p>
+        </div>
+    </footer>
 </body>
 
 </html>

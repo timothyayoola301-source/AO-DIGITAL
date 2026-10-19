@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Ayoola Olamide about projects and collaboration.">
+    <title>Contact | AO DIGITAL</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a class="brand" href="index.html">AO<span>.</span> DIGITAL</a>
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false"
+                aria-controls="site-nav">Menu</button>
+            <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a class="active" href="contact.html" aria-current="page">Contact</a>
+                <button class="theme-toggle" id="theme-toggle" type="button">Light mode</button>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="page-hero">
+            <div class="container narrow">
+                <p class="eyebrow">GET IN TOUCH</p>
+                <h1>Have a question or <span>an idea to share?</span></h1>
+                <p class="lead">I’m open to feedback, learning opportunities, and conversations about interesting
+                    projects.</p>
+            </div>
+        </section>
+
+        <section class="section container contact-layout">
+            <div class="contact-copy">
+                <p class="eyebrow">CONTACT DETAILS</p>
+                <h2>Let’s start a conversation.</h2>
+                <p>Use the details below or fill in the form. The form opens your email application with the message
+                    prepared; it does not send automatically.</p>
+
+                <a class="contact-detail" href="mailto:timothyayoola301@gmail.com">
+                    <span class="detail-icon">@</span>
+                    <span><small>Email</small><strong>timothyayoola301@gmail.com</strong></span>
+                </a>
+
+                <a class="contact-detail" href="tel:+2349030544965">
+                    <span class="detail-icon">↗</span>
+                    <span><small>Phone</small><strong>+234 903 054 4965</strong></span>
+                </a>
+
+                <a class="button button-secondary cv-button" href="documents/Ayoola-Olamide-CV.pdf" target="_blank"
+                    rel="noopener">
+                    View my CV
+                </a>
+            </div>
+
+            <form class="contact-form" id="contact-form">
+                <h2>Send a message</h2>
+                <p class="form-intro">Fill in the details and your email app will open with the message ready.</p>
+
+                <div class="form-field">
+                    <label for="name">Your name</label>
+                    <input id="name" name="name" type="text" autocomplete="name" required maxlength="100"
+                        placeholder="e.g. Tola Ade">
+                </div>
+
+                <div class="form-field">
+                    <label for="email">Your email</label>
+                    <input id="email" name="email" type="email" autocomplete="email" required maxlength="150"
+                        placeholder="you@example.com">
+                </div>
+
+                <div class="form-field">
+                    <label for="subject">Subject</label>
+                    <input id="subject" name="subject" type="text" required maxlength="150"
+                        placeholder="What would you like to discuss?">
+                </div>
+
+                <div class="form-field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required maxlength="3000"
+                        placeholder="Write your message here..."></textarea>
+                </div>
+
+                <button class="button button-primary" type="submit">Prepare email ↗</button>
+                <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <a class="brand" href="index.html">AO<span>.</span> DIGITAL</a>
+            <p>Designed and built by Ayoola Olamide.</p>
+            <p>© <span data-year></span> AO DIGITAL</p>
+        </div>
+    </footer>
+</body>
+
+</html>
